@@ -16,7 +16,7 @@ export default function Header() {
 			<Grid container justifyContent={'center'}>
 				<Avatar src={avatar} sx={{height: '120px', width: '120px', margin: '15px' }} />
 			</Grid>
-			<Typography variant='h4'>
+			<Typography variant='h4' sx={{color: 'burlywood'}}>
 				<TypeAnimation sequence={['David']} speed={40} />
 			</Typography>
 				<Typography variant='h5' sx={{color: "chocolate", textTransform: 'uppercase' }}>

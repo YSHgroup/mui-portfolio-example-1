@@ -16,7 +16,7 @@ const Particles = () => {
     return (
         <ParticlesLib
             id="tsparticles"
-            style={{opacity: '0.5', position: 'fixed'}}
+            style={{opacity: '0.3', position: 'fixed'}}
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
@@ -66,7 +66,7 @@ const Particles = () => {
                             default: "bounce",
                         },
                         random: true,
-                        speed: 3,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
@@ -98,7 +98,7 @@ const Particles = () => {
                         random: true,
                         anim: {
                             enable: false,
-                            speed: 6,
+                            speed: 3,
                             sync: true
                         }
                     },
