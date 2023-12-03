@@ -9,7 +9,7 @@ import './App.css';
 function App() {
 	return (
 		<Router>
-			<CssBaseline />
+			{/* <CssBaseline /> */}
 			<Navbar></Navbar>
 			<Routes>
 				<Route path='/' Component={Home} />
