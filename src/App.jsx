@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CssBaseline } from '@mui/material';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Router from './routes/Router'

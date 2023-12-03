@@ -27,6 +27,7 @@ const HiddenSide = () => (
                 menuItems.map((item, i) => (
                     <ListItemButton
                         sx = {{color: 'tan'}}
+                        key={i}
                     >
                         <ListItemIcon sx = {{color: 'tan'}}>
                             {item.listIcon}

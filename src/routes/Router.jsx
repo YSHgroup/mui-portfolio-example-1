@@ -20,4 +20,5 @@ export default function Router() {
             element: <Navigate to={'/'} replace/>
         }
     ])
+    return routes
 }
