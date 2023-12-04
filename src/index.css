@@ -23,11 +23,30 @@ a:hover {
 }
 
 body {
+  position: relative;
   margin: 0;
+  z-index: -2;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: url('./assets/programming-background-collage.jpg') no-repeat center center;
+  background-size: 100%;
+}
+
+body::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: dodgerblue;
+  opacity: .8;
+  background: url('./assets/programming-background-collage.jpg') no-repeat center center fixed;
+  background-size: 100%;
+  filter: blur(10px);
 }
 
 h1 {
