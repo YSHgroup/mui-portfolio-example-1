@@ -18,7 +18,11 @@ const menuItems = [
     {listIcon: <ContactMail/>, listText: 'Contact', listPatch: '/contact' },
 ]
 
-const HiddenSide = () => (
+const HiddenSide = (closeAside) => {
+    const callback = () => {
+        closeAside('side')
+    }
+    return(
 	<Box sx={{width: '250px', background: '#235', height: '100%'}}>
 		<Avatar src={avatar} sx={{width: '120px', height: '120px', margin: '16px auto'}} />
 		<Divider />
@@ -28,6 +32,7 @@ const HiddenSide = () => (
                     <ListItemButton
                         sx = {{color: 'tan'}}
                         key={i}
+                        onClick={callback}
                     >
                         <ListItemIcon sx = {{color: 'tan'}}>
                             {item.listIcon}
@@ -38,6 +43,6 @@ const HiddenSide = () => (
             }
 		</List>
 	</Box>
-);
+)};
 
 export default HiddenSide

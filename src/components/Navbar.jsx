@@ -5,6 +5,9 @@ import HiddenSide from './HiddenSide'
 
 export default function Navbar() {
 	const [open, setOpen] = React.useState(false)
+	const call = (cal) => {
+		console.log('callback--', cal)
+	}
 	return (
 		<>
 			<Box component={'nav'}>
@@ -18,7 +21,7 @@ export default function Navbar() {
 				</AppBar>
 			</Box>
 			<Drawer open={open} anchor='right' onClose={() => setOpen(false)} >
-			<HiddenSide />
+			<HiddenSide closeAside={() => console.log('jjjj')} />
 			{/* <Footer/> */}
 			</Drawer>
 		</>
